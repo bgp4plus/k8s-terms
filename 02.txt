@@ -1,0 +1,20 @@
+Kubernetes,コンテナ化されたアプリケーションのデプロイ、スケーリングなどの管理を自動化するためのプラットフォーム（コンテナオーケストレーションエンジン）
+コンテナオーケストレーションエンジン(他2つ),Docker Swarm mode・DC/OS(Data Center Operating System)
+Kubernetesが利用できるコンテナランタイム(3つ),Docker・cri-o・containerd
+実際にコンテナが起動するノード,Kubernetes Node
+Kubernetes Nodeを管理するノード,Kubernetes Master
+GoogleのマネージドKubernetesサービス,Google Kubernetes Engine(GKE)
+Microsoft AzureのマネージドKubernetesサービス,Azure Kubernetes Service(AKS)
+AWSのマネージドKubernetesサービス,Amazon Elastic Container Service for Kubernetes(Amazon EKS)
+YAML形式やJSON形式で記述した宣言的なコード,マニュフェスト
+マニュフェストによって管理できるもの,デプロイするコンテナや周辺リソース
+レプリカ,同じコンテナイメージを元にした複数のコンテナ
+オートスケーリング,負荷に応じて、コンテナのレプリカ数を自動的に増減
+スケジューリング,どのKubernetes Nodeに配置するかを決定するステップ
+AffinityとAnti-Affinity機能を使用すると可能なこと,コンテナ化されたアプリケーションのワークロードの特徴やKubernetes Nodeの性能差を意識してスケジューリングが可能
+リソース管理,コンテナ配置のための特別な指定がない場合には、Kubernetes NodeのCPUやメモリの空きリソースの状況に従ってスケジューリングが行われる
+クラスタオートスケール機能,KubernetesクラスタのKubernetes Nodeの増減も自動的に行うことも可能
+セルフヒーリング,プロセスの停止を検知すると、再度コンテナのスケジューリングを実行することで自動的にコンテナを再デプロイ
+セルフヒーリングの実行条件,プロセス監視・HTTP/TCPやシェルスクリプトによるヘルスチェックの成否
+Kubernetesのロードバランシング機能,Service(予め指定した条件に合致するコンテナ群に対して、ルーティングを行う機能)
+Kubernetesのバックエンドのデータストア,etcd
