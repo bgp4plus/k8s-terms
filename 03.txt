@@ -1,0 +1,5 @@
+ローカルKubernetes,ユーザの手元のマシン1台に構築して使用(Minikube、Docker for Mac）
+Kubernetes構築ツール,ツールを利用して、任意の環境にクラスタを構築して使用(kubeadm、Rancher）
+マネージドKubernetesサービス,パブリッククラウド上のマネージドサービスとして提供されるクラスタを使用（GKE、AKS、EKS）
+Kubernetesのサービスレベル目標（SLO）APIの応答性,Kubernetes MasterへのAPIリクエスト全体のうち９９％が1秒以内に返ってくる事
+Kubernetesのサービスレベル目標（SLO）Podの起動時間,Pod及そのコンテナは全体のうち９９％が5秒以内に起動する事・ただしイメージは事前にPullされているものとする
